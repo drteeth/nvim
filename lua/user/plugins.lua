@@ -79,9 +79,9 @@ return packer.startup(function(use)
 
 	use 'janko-m/vim-test'
 
-	-- use 'elixir-lang/vim-elixir'
-	-- use 'tpope/vim-projectionist'
-	-- use 'andyl/vim-projectionist-elixir'
+	use 'elixir-lang/vim-elixir'
+	use 'tpope/vim-projectionist'
+	use 'andyl/vim-projectionist-elixir'
 
 	use 'scrooloose/nerdtree'
 	use 'tpope/vim-fugitive'
