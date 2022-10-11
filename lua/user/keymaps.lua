@@ -76,7 +76,7 @@ keymap("n", "<leader>fs", ":w<CR>", opts)
 keymap("n", "<leader>qq", ":qa<CR>", opts)
 keymap("n", "<leader>bn", ":bn<CR>", opts)
 keymap("n", "<leader>bp", ":bp<CR>", opts)
-keymap("n", "<leader>bd", ":bd<CR>", opts)
+keymap("n", "<leader>bd", ":Bdelete<CR>", opts)
 keymap("n", "<leader>w", "<c-w>", opts)
 keymap("n", "<leader>wd", "<c-w>q", opts)
 

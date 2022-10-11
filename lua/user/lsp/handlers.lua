@@ -44,6 +44,7 @@ M.setup = function()
 		border = "rounded",
 		width = 60,
 	})
+
 end
 
 local function lsp_highlight_document(client)
