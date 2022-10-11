@@ -8,3 +8,11 @@ require "user.neoterm"
 require "user.cmp"
 require "user.lsp"
 require "user.treesitter"
+
+
+require("mason").setup()
+require("mason-lspconfig").setup()
+
+require("lspconfig").sumneko_lua.setup {}
+require("lspconfig").elixirls.setup {}
+require("lspconfig").rust_analyzer.setup {}
