@@ -7,4 +7,4 @@ require "user.neoterm"
 
 -- require "user.cmp"
 -- require "user.lsp"
--- require "user.treesitter"
+require "user.treesitter"

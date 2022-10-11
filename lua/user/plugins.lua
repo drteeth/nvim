@@ -69,8 +69,8 @@ return packer.startup(function(use)
 	-- use 'jose-elias-alvarez/null-ls.nvim' -- for formatters and linters
 
 	-- -- Treesitter
-	-- use 'nvim-treesitter/nvim-treesitter'
-	-- use 'elixir-lang/tree-sitter-elixir'
+	use 'nvim-treesitter/nvim-treesitter'
+	use 'elixir-lang/tree-sitter-elixir'
 
     -- Ben
 	use 'nanotech/jellybeans.vim'
@@ -79,7 +79,7 @@ return packer.startup(function(use)
 
 	use 'janko-m/vim-test'
 
-	use 'elixir-lang/vim-elixir'
+	-- use 'elixir-lang/vim-elixir'
 	use 'tpope/vim-projectionist'
 	use 'andyl/vim-projectionist-elixir'
 
