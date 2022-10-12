@@ -48,14 +48,14 @@ return packer.startup(function(use)
 	use({ "moll/vim-bbye" })
 
 	-- -- Colorschemes
-	-- use({ "folke/tokyonight.nvim" })
-	-- use("lunarvim/darkplus.nvim")
+	use({ "folke/tokyonight.nvim" })
+	use("lunarvim/darkplus.nvim")
 
 	-- -- cmp plugins
 	use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
 	use({ "hrsh7th/cmp-buffer" }) -- buffer completions
 	use({ "hrsh7th/cmp-path" }) -- path completions
-	-- -- use({ "saadparwaiz1/cmp_luasnip" }) -- snippet completions
+	-- use({ "saadparwaiz1/cmp_luasnip" }) -- snippet completions
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-nvim-lua" })
 
@@ -68,7 +68,7 @@ return packer.startup(function(use)
 	-- use 'williamboman/mason.nvim'
 	-- use 'williamboman/mason-lspconfig.nvim'
 	-- use 'neovim/nvim-lspconfig' -- enable LSP
-	-- use 'jose-elias-alvarez/null-ls.nvim' -- for formatters and linters
+	use 'jose-elias-alvarez/null-ls.nvim' -- for formatters and linters
 
 	use({ "mhanberg/elixir.nvim", requires = { "neovim/nvim-lspconfig", "nvim-lua/plenary.nvim" }})
 

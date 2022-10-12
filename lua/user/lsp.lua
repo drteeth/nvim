@@ -21,7 +21,7 @@ elixir.setup({
     vim.keymap.set("v", "<leader>em", ":ElixirExpandMacro<cr>", map_opts)
 
     -- standard lsp keybinds
-    vim.keymap.set("n", "df", "<cmd>lua vim.lsp.buf.formatting_seq_sync()<cr>", map_opts)
+    vim.keymap.set("n", "<leader>df", "<cmd>lua vim.lsp.buf.formatting_seq_sync()<cr>", map_opts)
     vim.keymap.set("n", "gf", "<cmd>lua vim.diagnostic.open_float()<cr>", map_opts)
     vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", map_opts)
     vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", map_opts)
