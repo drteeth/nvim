@@ -65,10 +65,12 @@ return packer.startup(function(use)
 
 	-- -- LSP
 	-- use 'williamboman/nvim-lsp-installer' -- simple to use language server installer
-	use 'williamboman/mason.nvim'
-	use 'williamboman/mason-lspconfig.nvim'
-	use 'neovim/nvim-lspconfig' -- enable LSP
-	use 'jose-elias-alvarez/null-ls.nvim' -- for formatters and linters
+	-- use 'williamboman/mason.nvim'
+	-- use 'williamboman/mason-lspconfig.nvim'
+	-- use 'neovim/nvim-lspconfig' -- enable LSP
+	-- use 'jose-elias-alvarez/null-ls.nvim' -- for formatters and linters
+
+	use({ "mhanberg/elixir.nvim", requires = { "neovim/nvim-lspconfig", "nvim-lua/plenary.nvim" }})
 
 	-- -- Treesitter
 	use 'nvim-treesitter/nvim-treesitter'
@@ -81,7 +83,7 @@ return packer.startup(function(use)
 
 	use 'janko-m/vim-test'
 
-	-- use 'elixir-lang/vim-elixir'
+	use 'elixir-lang/vim-elixir'
 	use 'tpope/vim-projectionist'
 	use 'andyl/vim-projectionist-elixir'
 
@@ -90,8 +92,6 @@ return packer.startup(function(use)
 	use 'gleam-lang/gleam.vim'
 
 	use 'kassio/neoterm'
-
-	-- use({ "mhanberg/elixir.nvim", requires = { "neovim/nvim-lspconfig", "nvim-lua/plenary.nvim" }})
 
 	use { 'junegunn/fzf', run = './install --all' }
 	use 'junegunn/fzf.vim'
