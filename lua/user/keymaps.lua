@@ -94,3 +94,5 @@ keymap("n", "<leader>bb", ":Buffers<CR>", opts)
 keymap("n", "<leader>/", ":Rg<CR>", opts)
 
 keymap("t", "<C-o>", "<C-\\><C-n>", opts)
+
+keymap("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", opts)

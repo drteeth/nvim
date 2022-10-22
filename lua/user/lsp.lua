@@ -1,7 +1,11 @@
 local elixir = require("elixir")
 
+-- Set up lspconfig.
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 elixir.setup({
   -- default settings, use the `settings` function to override settings
+  capabilities = capabilities,
   settings = elixir.settings({
     dialyzerEnabled = true,
     fetchDeps = false,
@@ -21,7 +25,7 @@ elixir.setup({
     vim.keymap.set("v", "<leader>em", ":ElixirExpandMacro<cr>", map_opts)
 
     -- standard lsp keybinds
-    vim.keymap.set("n", "<leader>df", "<cmd>lua vim.lsp.buf.formatting_seq_sync()<cr>", map_opts)
+    vim.keymap.set("n", "<leader>df", "<cmd>lua vim.lsp.buf.format()<cr>", map_opts)
     vim.keymap.set("n", "gf", "<cmd>lua vim.diagnostic.open_float()<cr>", map_opts)
     vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", map_opts)
     vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", map_opts)
@@ -39,8 +43,5 @@ elixir.setup({
     -- keybinds for vim-vsnip: https://github.com/hrsh7th/vim-vsnip
     vim.cmd([[imap <expr> <C-l> vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>']])
     vim.cmd([[smap <expr> <C-l> vsnip#available(1) ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>']])
-
-    -- update capabilities for nvim-cmp: https://github.com/hrsh7th/nvim-cmp
-    -- require("cmp_nvim_lsp").update_capabilities(capabilities)
   end
 })
