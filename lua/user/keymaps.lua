@@ -85,8 +85,8 @@ keymap("n", "<C-K>", "<C-W><C-K>", opts)
 keymap("n", "<C-L>", "<C-W><C-L>", opts)
 keymap("n", "<C-H>", "<C-W><C-H>", opts)
 
-keymap("n", "<leader>pt", ":NERDTreeToggle<cr>", opts)
-keymap("n", "<leader>ff", ":NERDTreeFind<cr>", opts)
+keymap("n", "<leader>pt", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>ff", ":NvimTreeFindFile<cr>", opts)
 
 keymap("n", "<leader>pf", ":Files<CR>", opts)
 keymap("n", "<leader>pb", ":Buffers<CR>", opts)
@@ -96,3 +96,6 @@ keymap("n", "<leader>/", ":Rg<CR>", opts)
 keymap("t", "<C-o>", "<C-\\><C-n>", opts)
 
 keymap("n", "<Esc><Esc>", ":nohlsearch<CR><Esc>", opts)
+
+-- paste like a normal person
+keymap("v", "p", '"_dP', opts)
