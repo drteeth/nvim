@@ -55,12 +55,12 @@ return packer.startup(function(use)
   use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
   use({ "hrsh7th/cmp-buffer" }) -- buffer completions
   use({ "hrsh7th/cmp-path" }) -- path completions
-  use({ "saadparwaiz1/cmp_luasnip" }) -- snippet completions
+  -- use({ "saadparwaiz1/cmp_luasnip" }) -- snippet completions
   use({ "hrsh7th/cmp-nvim-lsp" })
   use({ "hrsh7th/cmp-nvim-lua" })
 
   -- snippets
-  use({ "L3MON4D3/LuaSnip" }) --snippet engine
+  -- use({ "L3MON4D3/LuaSnip" }) --snippet engine
   -- use({ "rafamadriz/friendly-snippets" }) -- a bunch of snippets to use
 
   -- LSP
