@@ -60,17 +60,16 @@ return packer.startup(function(use)
   use({ "hrsh7th/cmp-nvim-lua" })
 
   -- snippets
-  -- use({ "L3MON4D3/LuaSnip" }) --snippet engine
+  use({ "L3MON4D3/LuaSnip" }) --snippet engine
   -- use({ "rafamadriz/friendly-snippets" }) -- a bunch of snippets to use
 
   -- LSP
-  -- use 'williamboman/nvim-lsp-installer' -- simple to use language server installer
   -- use 'williamboman/mason.nvim'
   -- use 'williamboman/mason-lspconfig.nvim'
   -- use 'neovim/nvim-lspconfig' -- enable LSP
   use 'jose-elias-alvarez/null-ls.nvim' -- for formatters and linters
 
-  -- TODO drop this in favour of mason an nvim-lspconfig
+  -- TODO drop this in favour of mason and nvim-lspconfig
   use({ "mhanberg/elixir.nvim", requires = { "neovim/nvim-lspconfig", "nvim-lua/plenary.nvim" }})
 
   -- Treesitter
